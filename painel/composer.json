@@ -1,0 +1,13 @@
+{
+	"require:": {},
+	"autoload": {
+		"psr-4": {
+			"Controllers\\": "Controllers/",
+			"Models\\": "Models/",
+			"Core\\": "Core/"
+		}
+	},
+	"require": {
+		"mercadopago/dx-php": "2.4.6"
+	}
+}

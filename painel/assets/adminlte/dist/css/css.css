@@ -1,0 +1,22 @@
+.headerPage {
+  background-size: cover;
+  background-position: 30% 45%;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: overlay;
+  border-radius: 0% 0% 0% 0% / 10% 10% 20% 20%;
+  padding: 100px
+}
+
+.circle {
+  background-color: #aaa0;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+.borderless td,
+.borderless th {
+  border: none;
+}

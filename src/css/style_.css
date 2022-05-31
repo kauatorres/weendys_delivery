@@ -1,0 +1,877 @@
+@font-face {
+    font-family: SF;
+    src: url('../fonts/SFPro.OTF');
+}
+
+@font-face {
+    font-family: SFBold;
+    src: url('../fonts/SFUIDisplay-Bold.ttf');
+}
+
+@font-face {
+    font-family: SFMedium;
+    src: url('../fonts/SFUIDisplay-Medium.otf');
+}
+
+body {
+    font-family: SFMedium;
+}
+
+.material-icons {
+    width: 24px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+.listTutorial {
+    padding: 10px;
+    background-color: #d3d3d3a6;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.cartList {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.entregaOpc {
+    width: 100%;
+}
+
+.colorPrice {
+    color: red;
+}
+
+.fixedButton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+}
+
+.roundedFixedBtn {
+    height: 60px;
+    line-height: 80px;
+    width: 60px;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #343a40;
+    margin-top: 16px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right {
+    /* > Direita */
+    float: right;
+}
+
+.left {
+    /* < Esquerda */
+    float: left;
+}
+
+.noPointer {
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .espaco {
+        margin-top: 15px;
+    }
+
+    .tempoEstimado {
+        width: 100%;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-successProgramador {
+    background-color: #35b77a !important;
+}
+
+.timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+}
+
+.timeline .timeline-item {
+    position: relative;
+}
+
+.timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .timeline-item:after {
+    background-color: hsl(0, 0%, 90%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+}
+
+.qtd {
+    border-radius: 0;
+    text-align: center;
+    width: 30%;
+}
+
+.prodLink {
+    color: #212529;
+}
+
+
+.prodLink:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.form-label {
+    margin-bottom: 0.0rem;
+}
+
+.headerOpc {
+    background: #f2f2f2;
+    padding: 15px;
+}
+
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
+
+
+    border-radius: 0% 0% 0% 0% / 10% 10% 20% 20%;
+}
+
+.BasketPage-title {
+    padding-top: 20px;
+    color: #0083ca;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px
+}
+
+@media (max-width: 995px) {
+    .BasketPage-title {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding: 0;
+        font-size: 18px;
+        line-height: 40px
+    }
+}
+
+.BasketTable {
+    padding-top: 20px
+}
+
+.BasketTable-header {
+    display: flex;
+    align-items: center;
+    font-weight: 700
+}
+
+.BasketTable-header-quantity {
+    width: 22%;
+    margin-left: 55%;
+    text-align: center
+}
+
+.BasketTable-header-price {
+    width: 23%
+}
+
+@media (min-width: 996px) {
+    .BasketTable-header {
+        margin-right: -20px;
+        margin-left: -20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 3px;
+        background-color: #f4f4f4
+    }
+}
+
+@media (max-width: 995px) {
+    .BasketTable {
+        padding-top: 0
+    }
+
+    .BasketTable-header {
+        margin-left: 0;
+        padding: 0
+    }
+
+    .BasketTable-header-quantity,
+    .BasketTable-header-price {
+        display: none
+    }
+}
+
+.BasketItem-availabilityWarning-link {
+    border: 0;
+    background: none
+}
+
+.BasketItem-availabilityWarning-link {
+    text-decoration: underline
+}
+
+.BasketItem {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.BasketItem-productContainer {
+    display: flex
+}
+
+.BasketItemPrice-listPrice {
+    color: #b9b9b9
+}
+
+.BasketItemPrice-listPrice--old {
+    text-decoration: line-through
+}
+
+.BasketItem-unavailableWarning {
+    margin-bottom: 20px;
+    color: #e25335
+}
+
+.BasketItem-unavailableWarning-link {
+    color: #e25335
+}
+
+.BasketItem-customerCompanyWarning {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #e25335
+}
+
+.BasketItem-availabilityWarning {
+    float: left;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: #fb9600
+}
+
+.BasketItem-availabilityWarning-title {
+    margin-bottom: 20px;
+    color: #0083ca;
+    font-size: 22px
+}
+
+.BasketItem-availabilityWarning-description {
+    margin-bottom: 20px
+}
+
+.BasketItem-availabilityWarning-link {
+    margin-left: 5px;
+    color: #fb9600
+}
+
+.BasketItem-warrantyContainer {
+    display: flex;
+    margin-top: 20px
+}
+
+@media (max-width: 995px) {
+    .BasketItem-productContainer {
+        flex-wrap: wrap
+    }
+
+    .BasketItem {
+        border-bottom: 4px solid #e5e5e5;
+        font-size: 14px;
+    }
+
+    .BasketItem:first-child {
+        padding-top: 0
+    }
+
+    .BasketItem:last-child {
+        border-bottom: 0
+    }
+
+    .BasketItem-delete-icon {
+        display: block
+    }
+
+    .BasketItem-delete-label {
+        display: none
+    }
+
+    .BasketItem-warrantyContainer {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #e5e5e5
+    }
+
+    .BasketItem-warrantyContainer .BasketItem-delete-label {
+        display: none
+    }
+
+    .BasketItem-warrantyContainer .BasketItem-delete-icon {
+        display: block
+    }
+
+    .BasketItem-warrantyContainer .BasketItemProduct-quantity {
+        order: 1
+    }
+
+    .BasketItem-warrantyContainer .BasketItemWarranty {
+        order: 2
+    }
+
+    .BasketItem-warrantyContainer .BasketItemProduct-price {
+        order: 3;
+        width: 100%;
+        margin-right: 20px
+    }
+
+    .BasketItem-unavailableWarning {
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px
+    }
+
+    .BasketItem-availabilityWarning-title {
+        font-size: 18px;
+        text-align: center
+    }
+
+    .BasketItem-availabilityWarning-description {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        line-height: 1.3;
+        text-align: center
+    }
+}
+
+.BasketItemWarranty {
+    width: 55%
+}
+
+.BasketItemWarranty-title {
+    margin-left: 122px
+}
+
+@media (max-width: 995px) {
+    .BasketItemWarranty-title {
+        width: 163px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 10px
+    }
+
+    .BasketItemWarranty-title::before {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-weight: bold;
+        content: "Garantia"
+    }
+
+    .BasketItemWarranty {
+        width: auto
+    }
+}
+
+.BasketItemProduct-info-sku {
+    color: #8c8c8c;
+    font-size: 14px
+}
+
+.BasketItemProduct-quantity-remove {
+    border: 0;
+    background: none
+}
+
+.BasketItemProduct-quantity-remove {
+    text-decoration: underline
+}
+
+.BasketItemProduct-quantity-dropdown:disabled {
+    cursor: not-allowed
+}
+
+.BasketItemProduct-quantity-dropdown {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    margin: 0 auto;
+    padding: 0 6px
+}
+
+@media (min-width: 996px) {
+    .BasketItemProduct-quantity-dropdown {
+        height: 40px;
+        font-size: 16px
+    }
+}
+
+@media (max-width: 995px) {
+    .BasketItemProduct-quantity-dropdown {
+        height: 52px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        font-size: 14px
+    }
+
+    .BasketItemProduct-quantity-dropdown::-moz-placeholder {
+        color: transparent
+    }
+
+    .BasketItemProduct-quantity-dropdown:-ms-input-placeholder {
+        color: transparent
+    }
+
+    .BasketItemProduct-quantity-dropdown::placeholder {
+        color: transparent
+    }
+}
+
+.BasketItemProduct-quantity-dropdown:disabled {
+    background-color: #f4f4f4
+}
+
+.BasketItemProduct {
+    display: flex
+}
+
+.BasketItemProduct-image {
+    min-width: 102px;
+    margin-right: 20px
+}
+
+.BasketItemProduct-info-title {
+    color: #404040;
+    text-decoration: none
+}
+
+.BasketItemProduct-info-extra {
+    float: right;
+    width: 100%;
+    margin-right: 0;
+    color: #404040;
+    text-decoration: none
+}
+
+.BasketItemProduct-info-store {
+    margin-top: 10px;
+    color: #8c8c8c
+}
+
+.BasketItemProduct-info-store-link {
+    color: #404040;
+    font-weight: 700
+}
+
+.BasketItemProduct-informative {
+    font-size: 14px
+}
+
+.BasketItemProduct-delivery-one-hour,
+.BasketItemProduct-delivery-message {
+    color: #58c22e;
+    font-weight: 400
+}
+
+.BasketItemProduct-magazine {
+    position: relative;
+    top: -2px;
+    left: 4px;
+    color: #58c22e;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.BasketItemProduct-quantity {
+    width: 22%;
+    text-align: center
+}
+
+.BasketItemProduct-quantity-dropdown {
+    width: 54px;
+    height: 40px
+}
+
+.BasketItemProduct-quantity-remove {
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 1
+}
+
+.BasketItem-delete-icon {
+    display: none
+}
+
+.BasketItemProduct-price,
+.BasketItemProduct-price--unavailable {
+    width: 23%;
+    color: #0083ca
+}
+
+.BasketItemProduct-price--unavailable {
+    color: #b9b9b9;
+    text-decoration: line-through
+}
+
+@media (min-width: 996px) {
+    .BasketItemProduct {
+        width: 55%
+    }
+}
+
+@media (max-width: 995px) {
+    .BasketItemProduct-info {
+        padding-right: 6px
+    }
+
+    .BasketItemProduct-price,
+    .BasketItemProduct-price--unavailable {
+        width: 50%;
+        margin-top: 10px;
+        margin-right: 10px;
+        text-align: right
+    }
+
+    .BasketItemProduct {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+
+    .BasketItemProduct-image {
+        margin-right: 10px;
+        margin-left: 10px
+    }
+
+    .BasketItemProduct-quantity-title {
+        display: block;
+        font-size: 14px
+    }
+
+    .BasketItemProduct-quantity {
+        float: left;
+        width: 40%;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: left
+    }
+
+    .BasketItemProduct-quantity-dropdown {
+        float: left;
+        width: 4rem;
+        padding-bottom: 10px
+    }
+
+    .BasketItemProduct-quantity-remove {
+        border-radius: 4px;
+        border: 1px solid #e5e5e5;
+        float: left;
+        margin-top: 3px;
+        margin-left: 2px;
+        padding: 10px;
+    }
+
+    .BasketItem-Qtd {
+        background-color: #26915f;
+        color: white;
+    }
+}
+
+.BasketPriceBox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 20px
+}
+
+@media (min-width: 996px) {
+    .BasketPriceBox {
+        align-items: flex-end;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px;
+        border-radius: 3px;
+        background-color: #f4f4f4;
+        box-shadow: inset 0 -5px 0 -2px #0083ca
+    }
+}
+
+.BasketPriceBox-prices {
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+.BasketPriceBox-prices-title {
+    margin-right: 20px;
+    text-align: right
+}
+
+.BasketPriceBox-prices-title--normal {
+    font-weight: 400
+}
+
+.BasketPriceBox-prices-values,
+.BasketPriceBox-prices-values--unavailable {
+    color: #0083ca
+}
+
+.BasketPriceBox-prices-values--unavailable {
+    color: #b9b9b9;
+    text-decoration: line-through
+}
+
+.BasketPriceBox-unavailableWarning {
+    padding-top: 20px;
+    color: #404040;
+    text-align: right
+}
+
+@media (min-width: 996px) {
+    .BasketPriceBox-price {
+        display: flex;
+        justify-content: flex-end
+    }
+
+    .BasketPriceBox-prices {
+        margin-right: 0
+    }
+
+    .BasketPriceBox-prices-values,
+    .BasketPriceBox-prices-values--unavailable {
+        display: inline-block;
+        width: 224px;
+        margin-right: 0
+    }
+}
+
+@media (max-width: 995px) {
+    .BasketPriceBox-prices {
+        margin-left: 10px;
+        font-size: 14px
+    }
+
+    .BasketPriceBox-price {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .BasketPriceBox-prices-title {
+        width: auto;
+        width: initial
+    }
+
+    .BasketPriceBox-prices-values,
+    .BasketPriceBox-prices-values--unavailable {
+        margin-right: 20px;
+        text-align: right
+    }
+
+    .BasketPriceBox-prices--cash {
+        font-weight: normal
+    }
+
+    .BasketPriceBox-unavailableWarning {
+        box-sizing: border-box;
+        padding: 10px
+    }
+}
+
+.BasketContinue-button,
+.BasketContinue-button:hover,
+.BasketContinue-button:active {
+    border-radius: 4px;
+    border: 0;
+    background-color: #58c22e;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none
+}
+
+@media (min-width: 996px) {
+
+    .BasketContinue-button,
+    .BasketContinue-button:hover,
+    .BasketContinue-button:active {
+        width: 250px
+    }
+}
+
+.BasketContinue-button:hover {
+    background-color: #48a524
+}
+
+.BasketContinue-button:active {
+    background-color: #378e16
+}
+
+.BasketContinue-button:disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+    color: #b9b9b9;
+    cursor: not-allowed
+}
+
+.BasketContinue-button,
+.BasketContinue-button:hover,
+.BasketContinue-button:active {
+    border-radius: 4px;
+    border: 0;
+    background-color: #58c22e;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none
+}
+
+@media (min-width: 996px) {
+
+    .BasketContinue-button,
+    .BasketContinue-button:hover,
+    .BasketContinue-button:active {
+        width: 250px
+    }
+}
+
+.BasketContinue-button:hover {
+    background-color: #48a524
+}
+
+.BasketContinue-button:active {
+    background-color: #378e16
+}
+
+.BasketContinue-button:disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+    color: #b9b9b9;
+    cursor: not-allowed
+}
+
+.BasketContinue-actions {
+    margin-right: 0;
+    line-height: 40px
+}
+
+.BasketContinue-information-promocode-vale {
+    color: #b9b9b9;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.BasketContinue-button:hover {
+    background-color: #48a524
+}
+
+.BasketContinue-button[disabled],
+.BasketContinue-button[disabled]:hover {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+    color: #b9b9b9;
+    cursor: not-allowed
+}
+
+.BasketContinue-button:active {
+    background-color: #378e16
+}
+
+@media (min-width: 996px) {
+
+    .BasketContinue-button,
+    .BasketContinue-button:hover,
+    .BasketContinue-button:active {
+        width: 224px
+    }
+
+    .BasketContinue-buyMore {
+        margin-right: 20px;
+        font-size: 14px;
+        text-align: right
+    }
+
+    .BasketContinue-information-promocode-vale {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px
+    }
+}
+
+@media (max-width: 995px) {
+    .BasketContinue {
+        padding-top: 20px;
+        background-color: #f4f4f4
+    }
+
+    .BasketContinue-actions {
+        display: flex;
+        flex-flow: column-reverse;
+        padding-right: 10px;
+        padding-left: 10px
+    }
+
+    .BasketContinue-button,
+    .BasketContinue-button:hover,
+    .BasketContinue-button:active {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        letter-spacing: 0.05em
+    }
+
+    .BasketContinue-buyMore {
+        color: #404040;
+        font-size: 14px;
+        text-align: center
+    }
+
+    .BasketContinue-information-promocode-vale {
+        margin-bottom: 15px;
+        text-align: center
+    }
+}
